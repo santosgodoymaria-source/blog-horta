@@ -1,0 +1,225 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 100vw;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f8f2;
+}
+
+
+/* CABEÇALHO */
+
+header {
+    background-color: #247a37;
+    color: #ffffff;
+    text-align: center;
+    margin: 0 auto;
+    padding: 24px 16px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+header p {
+    margin: 8px 0;
+}
+
+.professor {
+    font-size: 14px;
+}
+
+
+/* POSTS */
+
+main {
+    color: #17351d;
+    margin: 0 auto;
+    padding: 16px;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+article {
+    display: flex;
+
+    background-color: #ffffff;
+    border: 2px solid #247a37;
+    border-radius: 10px;
+
+    margin: 16px;
+    gap: 16px;
+    padding: 20px;
+
+    flex: 1 1 25%;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: flex-start;
+
+    min-width: 280px;
+
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+
+/* IMAGENS DOS POSTS */
+
+article img {
+    width: 80px;
+    height: 80px;
+
+    object-fit: cover;
+
+    border-radius: 8px;
+    border: 2px solid #247a37;
+}
+
+
+article h2 {
+    color: #247a37;
+}
+
+
+.artigo-autor {
+    font-weight: bold;
+    color: #000000;
+}
+
+
+.artigo-data {
+    font-weight: bold;
+    color: #247a37;
+}
+
+
+.aviso {
+    color: #247a37;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/* POSTS AINDA NÃO PUBLICADOS */
+
+.em-breve {
+    background-color: #f8faf7;
+}
+
+
+/* BOTÕES */
+
+button {
+    background-color: #ffffff;
+
+    border: 1px solid #247a37;
+    border-radius: 6px;
+
+    padding: 7px 12px;
+    margin: 4px;
+
+    cursor: pointer;
+
+    font-size: 16px;
+}
+
+
+button:hover {
+    background-color: #dff0df;
+}
+
+
+/* ÁREA DOS BLOGS DOS ALUNOS */
+
+.blogs-alunos {
+    background-color: #171717;
+    color: #ffffff;
+
+    padding: 30px 20px;
+    text-align: center;
+}
+
+
+.blogs-alunos h2 {
+    color: #7ed957;
+    font-size: 28px;
+}
+
+
+.links-alunos {
+    display: flex;
+
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 12px;
+
+    margin-top: 25px;
+}
+
+
+.links-alunos a {
+    background-color: #247a37;
+    color: #ffffff;
+
+    text-decoration: none;
+
+    padding: 12px 18px;
+
+    border-radius: 8px;
+
+    transition: 0.3s;
+}
+
+
+.links-alunos a:hover {
+    background-color: #7ed957;
+    color: #000000;
+}
+
+
+.mais-links {
+    margin-top: 25px;
+    font-style: italic;
+}
+
+
+/* RODAPÉ */
+
+footer {
+    background-color: #000000;
+    color: #ffffff;
+
+    text-align: center;
+
+    padding: 16px;
+}
+
+
+footer p {
+    margin: 5px;
+}
+
+
+/* CELULAR */
+
+@media (max-width: 700px) {
+
+    main {
+        flex-direction: column;
+    }
+
+    article {
+        margin: 10px 0;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+}
